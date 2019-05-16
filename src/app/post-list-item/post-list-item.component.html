@@ -1,0 +1,11 @@
+<li *ngIf="postItem" [ngClass]="{'list-group-item': true, 'list-group-item-success': postItem.loveIts > 0, 'list-group-item-danger': postItem.loveIts < 0}" >
+  <h3>
+      {{ postItem.title }}
+  </h3>
+  <span style="position: absolute;right: 25px;top: 5px;"> {{ postItem.created_at | date: 'short' }} </span>
+  <p>
+    {{ postItem.content }}
+  </p>
+  <button (click)="onLike()" style="margin:2px;" class="btn btn-success">Like</button> 
+  <button (click)="onDislike()" class="btn btn-danger">Dislike</button>
+</li>

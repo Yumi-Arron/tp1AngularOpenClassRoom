@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tp-blog';
+  posts = [{
+    title: "Mon premier post",
+    content: "Content desription",
+    loveIts: 0,
+    created_at: new Date()
+  },
+  {
+    title: "Mon deuxieme post",
+    content: "Content desription",
+    loveIts: 0,
+    created_at: new Date()
+  },
+  {
+    title: "Mon troisieme post",
+    content: "Content desription",
+    loveIts: 0,
+    created_at: new Date()
+  }];
 }
